@@ -6,7 +6,7 @@ let [tabClicked,setTabClicked]=useState("")
 
     }
 
-    
+
     return(
         <div>
             <ul>{
@@ -17,7 +17,7 @@ let [tabClicked,setTabClicked]=useState("")
 
             </ul>
             {
-                tabClicked && <p>This is content for {tabClicked}</p>
+                tabClicked && <p>This is content for {tabClicked}.</p>
             }
             
                 
