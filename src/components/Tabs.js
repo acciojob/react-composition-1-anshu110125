@@ -1,15 +1,17 @@
  import React, { useState } from "react";
 const Tabs=({tabs})=>{
 let [tabClicked,setTabClicked]=useState("")
-    function handleClick(content){
-        setTabClicked(content)
+    function handleClick(contents){
+        setTabClicked(contents)
 
     }
+
+    
     return(
         <div>
             <ul>{
                 tabs.map((value)=>
-                <li onClick={()=>handleClick(value.content)}>{value.title}</li>
+                <li onClick={()=>handleClick(value.contents)}>{value.titles}</li>
                 )
             }
 
